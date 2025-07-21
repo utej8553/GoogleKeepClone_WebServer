@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="page-trash">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Trash - Google Keep Clone</title>
+    <link rel="stylesheet" href="trash.css" />
+</head>
+<body>
+<div class="topbar">
+    <div class="icon">
+        <img src="../Images/keep_2020q4_48dp%201.png" alt="Keep" class="search_icon" />
+        <span class="icon_text">Keep</span>
+    </div>
+    <div class="search">
+        <img src="../Images/find_in_page.png" alt="Search" class="search_icon" />
+        <input type="text" class="search_input" placeholder="Search notes" />
+    </div>
+    <div class="profile">
+        <img src="../Images/account_circle.png" alt="Profile" class="profile_icon" />
+        <span class="profile_text">your@email.com</span>
+        <button class="delete_acc">Delete Acc</button>
+    </div>
+</div>
+
+<div class="main">
+    <div class="navbar">
+        <img src="../Images/cottage.png" class="nav_icon_home nav_icon" onclick="location.href='../home/home.html'" />
+        <img src="../Images/label.png" class="nav_icon_archive nav_icon" onclick="location.href='../archive/archive.html'" />
+        <img src="../Images/delete.png" class="nav_icon_trash nav_icon" onclick="location.href='../trash/trash.html'"/>
+    </div>
+
+    <div class="content">
+        <!-- No input in trash -->
+        <div class="data">
+            <!--            <div class="data_inside">-->
+            <!--                This note was deleted-->
+            <!--            </div>-->
+            <!--            <div class="data_inside">-->
+            <!--                Here's another trashed note-->
+            <!--            </div>-->
+        </div>
+    </div>
+</div>
+<script src="trash.js"></script>
+</body>
+</html>

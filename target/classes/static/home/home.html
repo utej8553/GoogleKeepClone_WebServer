@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="page-home">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keep Clone - Home</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+<div class="topbar">
+    <div class="icon">
+        <img src="../Images/keep_2020q4_48dp 1.png" alt="Keep Icon" width="40" />
+        <span class="icon_text">Keep</span>
+    </div>
+    <div class="search">
+        <img src="../Images/find_in_page.png" class="search_icon" alt="Search" />
+        <input type="text" class="search_input" placeholder="Search notes..." />
+    </div>
+    <div class="profile">
+        <img src="../Images/account_circle.png" alt="Profile" class="profile_icon" />
+        <h1 class="profile_text">Utej</h1>
+        <button class="delete_acc">Delete Acc</button>
+    </div>
+</div>
+
+<div class="main">
+    <div class="navbar">
+        <img src="../Images/cottage.png" class="nav_icon" alt="Home" onclick="location.href='../home/home.html'" />
+        <img src="../Images/label.png" class="nav_icon" alt="Archive" onclick="location.href='../archive/archive.html'" />
+        <img src="../Images/delete.png" class="nav_icon" alt="Trash" onclick="location.href='../trash/trash.html'" />
+    </div>
+
+    <div class="content">
+        <div class="input-container">
+            <div class="input collapsed">
+                <textarea class="text_input" placeholder="Take a note..."></textarea>
+            </div>
+            <div class="input_click">
+                <img src="../Images/check_small.png" class="click_icon" alt="Add" />
+            </div>
+        </div>
+
+        <div class="data"></div>
+    </div>
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>
