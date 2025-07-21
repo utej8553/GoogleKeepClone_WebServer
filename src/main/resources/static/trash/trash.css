@@ -1,0 +1,280 @@
+/* Google Keep Inspired Shared Page Styles */
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background: #202124;
+    color: #fff;
+    padding: 25px;
+    font-size: 1.25rem;
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 15px 30px;
+    background: #303134;
+    border-radius: 15px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon_text {
+    font-size: 30px;
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #3c4043;
+    border-radius: 12px;
+    padding: 12px 20px;
+    gap: 15px;
+    flex: 1;
+    margin: 0 30px;
+    max-width: 600px;
+}
+
+.search_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.search_input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    width: 100%;
+    outline: none;
+}
+
+/* PROFILE */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile_text {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar {
+    background: #303134;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 25px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.nav_icon_home,
+.nav_icon_archive,
+.nav_icon_trash {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 12px;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.nav_icon_home:hover,
+.nav_icon_trash:hover,
+.nav_icon_archive:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.page-home .nav_icon_home,
+.page-archive .nav_icon_archive,
+.page-trash .nav_icon_trash {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* INPUT BOX */
+.input {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #3c4043;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.input.collapsed {
+    padding: 8px 15px;
+    height: 60px;
+    align-items: center;
+}
+
+.input.expanded {
+    padding: 20px;
+    min-height: 200px;
+}
+
+.input.collapsed .text_input {
+    font-size: 1rem;
+    padding: 8px;
+    min-height: 20px;
+}
+
+.input.expanded .text_input {
+    font-size: 1.25rem;
+    padding: 15px;
+    min-height: 80px;
+}
+
+.text_input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #fff;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.input_click {
+    background: #fbbc04;
+    border-radius: 15px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.input_click:hover {
+    background: #e2a400;
+}
+
+.click_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.page-archive .input,
+.page-trash .input {
+    display: none;
+}
+
+/* NOTES AREA */
+.data {
+    background: #303134;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+}
+
+.data_inside {
+    background: #3c4043;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: visible;
+    min-height: 80px;
+}
+
+.data_inside .menu_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.data_inside .options_menu {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: #2c2d30;
+    border: 1px solid #555;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.data_inside .options_menu button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.data_inside .options_menu button:hover {
+    background: #444;
+}
+
+.data_inside.show-options .options_menu {
+    display: flex;
+}
+
+/* Scrollbar - Removed since scrolling is disabled */
+.data::-webkit-scrollbar {
+    display: none;
+}
