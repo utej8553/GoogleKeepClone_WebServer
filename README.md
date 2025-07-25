@@ -4,30 +4,43 @@ A full-stack web application inspired by Google Keep, allowing users to create, 
 
 ## 🚀 Features
 
-- Create and view notes
-- Archive or delete notes
-- Notes grouped as: **Home (All active + archived)**, **Archive**, and **Trash**
-- Email-based note association
-- RESTful API backend
+- ✍️ Create and manage notes
+- 📦 Archive notes when no longer actively needed
+- 🗑️ Move notes to Trash
+- 📂 Pages for: **Home (Active + Archived Notes)**, **Archive**, and **Trash**
+- 📧 Notes are tied to a user via email
+- 📡 RESTful API architecture
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Java, Spring Boot, JPA, PostgreSQL
-- **Frontend**: HTML, CSS, JavaScript
-- **Database**: PostgreSQL
+| Layer      | Technology                  |
+|------------|-----------------------------|
+| Backend    | Java, Spring Boot, JPA      |
+| Frontend   | HTML, CSS, JavaScript       |
+| Database   | PostgreSQL                  |
+
+---
 
 ## 📦 Prerequisites
 
-- Java 17+
+- Java 17 or higher
 - Maven
-- PostgreSQL running locally
+- PostgreSQL installed and running locally
 
-## Deployment
+---
 
-- Webserver was deployed on render.com
-- PostgresSQL instance also created on render.com
-- Frontend pages are hosted through GithubPages
+## 🚀 Deployment (Live Hosting)
 
-## Frontend repository/weblinks
+- Backend deployed on **Render.com**
+- PostgreSQL instance hosted via **Render.com**
+- Frontend pages deployed using **GitHub Pages**
 
-- [GoogleKeepCloneWebsite](https://github.com/utej8553/GoogleKeepClone_Frontend)
+---
+
+## 🌐 Frontend Repository & Live Demo
+
+- GitHub: [GoogleKeepClone_Frontend](https://github.com/utej8553/GoogleKeepClone_Frontend)
+- Login: [Login](https://utej8553.github.io/GoogleKeepClone_Frontend/login/login.html)
+- Signup: [Signup](https://utej8553.github.io/GoogleKeepClone_Frontend/signup/signup.html)
